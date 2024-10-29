@@ -1,0 +1,268 @@
+/* Estilos Básicos */
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #111; /* Fondo oscuro para resaltar el neón */
+ color: #fff; /* Texto principal en blanco */
+}
+/* Encabezado */
+header {
+ display: flex;
+ justify-content: space-between;
+ padding: 10px;
+ background-color: #111; /* Fondo oscuro */
+ box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.6); /* Sombra neón */
+}
+header .logo {
+ font-size: 24px;
+ color: #0ff; /* Color neón */
+ text-shadow: 0px 0px 5px #0ff, 0px 0px 10px #0ff, 0px 0px 15px #0ff;
+}
+nav a {
+ color: #0ff; /* Color neón */
+ margin: 0 10px;
+ text-decoration: none;
+ font-weight: bold;
+ text-shadow: 0px 0px 5px #0ff, 0px 0px 10px #0ff, 0px 0px 15px #0ff;
+}
+/* Slider 3D */
+.slider-3d {
+ display: flex;
+ perspective: 1000px;
+ /* Añadir más animación en JS */
+}
+.slide {
+ color: #ff00ff;
+ font-size: 2em;
+ text-align: center;
+ padding: 20px;
+ background-color: #222;
+ box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+/* Servicios Grid */
+.servicios-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+ gap: 20px;
+ padding: 20px;
+}
+.servicio {
+ background-color: #222;
+ color: #0ff;
+ padding: 20px;
+ border-radius: 10px;
+ box-shadow: 0px 0px 15px #0ff;
+ transition: transform 0.3s;
+}
+.servicio:hover {
+ transform: scale(1.05);
+ box-shadow: 0px 0px 20px #0ff, 0px 0px 30px #0ff;
+}
+/* Productos en Hexágonos */
+.productos-hex {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 20px;
+ padding: 20px;
+}
+.producto {
+ clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+ background: #111;
+ padding: 20px;
+ color: #ff00ff;
+ box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+ text-align: center;
+}
+.producto h3 {
+ color: #0ff;
+ text-shadow: 0px 0px 5px #0ff, 0px 0px 10px #0ff;
+}
+.producto p {
+ color: #ff00ff;
+}
+/* Botón para Navegar a Máquinas */
+.btn-ver-maquinas {
+ display: inline-block;
+ padding: 15px 30px;
+ margin: 20px auto;
+ background-color: #0ff;
+ color: #111;
+ font-size: 1.2em;
+ text-decoration: none;
+ text-align: center;
+ box-shadow: 0px 0px 15px #0ff;
+ border-radius: 5px;
+ transition: box-shadow 0.3s, transform 0.3s;
+}
+.btn-ver-maquinas:hover {
+ box-shadow: 0px 0px 20px #0ff, 0px 0px 30px #0ff;
+ transform: scale(1.1);
+}
+/* Footer con Redes Sociales */
+footer {
+ background-color: #111;
+ color: #fff;
+ text-align: center;
+ padding: 20px;
+ box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.6);
+}
+footer a {
+ color: #0ff;
+ margin: 0 10px;
+ text-decoration: none;
+ text-shadow: 0px 0px 5px #0ff, 0px 0px 10px #0ff;
+}
+/* Productos en Hexágonos */
+.productos-hex {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+ gap: 20px;
+ padding: 20px;
+}
+.producto {
+ clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+ background: #111;
+ padding: 20px;
+ color: #ff00ff;
+ box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+ text-align: center;
+ position: relative;
+ overflow: hidden;
+}
+/* Imagen dentro del hexágono */
+.producto img {
+ width: 100%;
+ height: auto;
+ max-height: 150px;
+ object-fit: cover;
+ margin-bottom: 10px;
+ border-radius: 8px;
+}
+/* Nombre del producto */
+.producto h3 {
+ color: #0ff;
+ text-shadow: 0px 0px 5px #0ff, 0px 0px 10px #0ff;
+ margin: 10px 0;
+ font-size: 1.2em;
+}
+/* Precio */
+.producto p {
+ color: #ff00ff;
+ font-size: 1.1em;
+ margin: 5px 0;
+}
+
+/* Servicios Grid */
+.servicios-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+ gap: 20px;
+ padding: 20px;
+}
+.servicio {
+ background-color: #222;
+ color: #0ff;
+ padding: 20px;
+ border-radius: 10px;
+ box-shadow: 0px 0px 15px #0ff;
+ text-align: center;
+ transition: transform 0.3s;
+}
+.servicio:hover {
+ transform: scale(1.05);
+ box-shadow: 0px 0px 20px #0ff, 0px 0px 30px #0ff;
+}
+/* Imagen dentro de cada servicio */
+.servicio img {
+ width: 100%;
+ height: auto;
+ max-height: 150px;
+ object-fit: cover;
+ border-radius: 10px;
+ margin-bottom: 10px;
+}
+/* Título del servicio */
+.servicio h3 {
+ color: #0ff;
+ font-size: 1.2em;
+ margin: 10px 0;
+ text-shadow: 0px 0px 5px #0ff, 0px 0px 10px #0ff;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el texto y la imagen */
+    font-size: 24px;
+    color: #0ff; /* Color neón */
+    text-shadow: 0px 0px 5px #0ff, 0px 0px 10px #0ff, 0px 0px 15px #0ff;
+}
+
+.logo-img {
+    width: 80px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+{
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ color: #fff;
+ background-color: #000;
+}
+/* Navegación */
+header nav a {
+ display: block;
+ padding: 10px;
+}
+/* Ajustes Generales para Grid */
+.servicios-grid, .productos-hex {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+ gap: 20px;
+}
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+ /* Ajuste del encabezado */
+ header nav {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ /* Ajuste del Banner */
+ .slider-3d .slide {
+   font-size: 1.2em;
+   padding: 15px;
+ }
+ /* Servicios y Productos en una sola columna */
+ .servicios-grid, .productos-hex {
+   grid-template-columns: 1fr;
+   gap: 15px;
+   padding: 10px;
+ }
+ /* Ajustes de los hexágonos de productos */
+ .producto img {
+   max-height: 120px;
+ }
+ /* Texto de servicios y productos */
+ .servicio h3, .producto h3 {
+   font-size: 1em;
+ }
+ /* Footer */
+ footer {
+   text-align: center;
+   padding: 15px;
+ }
+}
+/* Media Query para pantallas aún más pequeñas (teléfonos en orientación vertical) */
+@media (max-width: 480px) {
+ /* Texto más pequeño y espaciado reducido */
+ .slider-3d .slide, .servicio h3, .producto h3 {
+   font-size: 0.9em;
+ }
+ /* Ajuste de imágenes en servicios y productos */
+ .servicio img, .producto img {
+   max-height: 100px;
+ }
+}
